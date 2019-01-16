@@ -1,0 +1,10 @@
+%h3.header Demo SimpleForm
+
+= simple_form_for :user do |f|
+  = f.input :first_name, label: 'Enter your first name', error: 'Username is mandatory, please specify one'
+  = f.input :last_name, label: 'Enter your last name', error: 'Username is mandatory, please specify one'
+  = f.input :email, placeholder: 'user@mail.com'
+  = f.input :password, hint: 'No special characters.'
+  = f.input :gender, as: :radio_buttons, collection: [['0', 'Female'], ['1', 'Male']], label_method: :second, value_method: :first 
+
+  = f.button :submit
