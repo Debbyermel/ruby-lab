@@ -26,3 +26,22 @@ ul {
   color: red;
   border: 1px solid green;
 }
+
+span.status {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0.25em auto;
+  padding: 0;
+  border: 1px solid #000;
+}
+
+span.status.true {
+  background: green;
+  color: white;
+}
+
+span.status.false {
+  background: red;
+  color: white;
+}
