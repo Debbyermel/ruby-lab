@@ -1,0 +1,26 @@
+
+%h1 Such a simple list.
+%br
+
+  %table.list
+    %tr Subjects
+    %tr Visible
+    %tr Pages
+    %tr Actions
+
+
+  %tr.cycle
+    %td
+    %td
+    %td.center
+    %td.center
+    %td.actions
+    -# %link_to( "Show", {:action => 'show', :id => subject.id}, :class => 'action show') 
+    -# %link_to( "Edit", {:action => 'edit', :id => subject.id}, :class => 'action edit') 
+    -# %link_to( "Delete", {:action => 'delete', :id => subject.id}, :class => 'action delete')
+    
+
+
+
+
+

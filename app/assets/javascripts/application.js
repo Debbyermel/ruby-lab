@@ -15,5 +15,5 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
-//require popper
-//= require_tree .
+//= require demo
+//= require crud_test
